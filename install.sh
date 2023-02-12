@@ -38,7 +38,6 @@ printf '     - locate\n'
 printf '     - yersinia\n'
 printf '     - rlwrap\n'
 printf '     - socat\n'
-printf '     - linenum\n'
 printf '     - html2text\n'
 printf '     - chisel\n'
 printf '     - terminator\n'
@@ -55,7 +54,6 @@ apt install ntop\
     yersinia\
     rlwrap\
     socat\
-    linenum\ 
     html2text\
     chisel\
     terminator\
@@ -77,7 +75,7 @@ apt-get install \
     powershell \
     patator \
     net-tools \
-    tmux 
+    tmux -y
     
     
     
