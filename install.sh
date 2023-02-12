@@ -21,12 +21,12 @@ deactivate
 
 #Install Vis. Studio Code
 #go to site & dl latest version. Code's not in the repo anymore
-sudo apt install software-properties-common apt-transport-https wget -y
+apt install software-properties-common apt-transport-https wget -y
 wget -O- https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor | sudo tee /usr/share/keyrings/vscode.gpg
 echo deb [arch=amd64 signed-by=/usr/share/keyrings/vscode.gpg] https://packages.microsoft.com/repos/vscode stable main | sudo tee /etc/apt/sources.list.d/vscode.list
-sudo apt update
-sudo apt install code
-sudo apt install snapd
+apt update
+apt install code
+apt install snapd
 #sudo apt install ./code_1.68.0-1654690107_amd64.deb
 
 #install other standard apps
@@ -47,7 +47,7 @@ printf '     - squid\n'
 printf '     - powershell-empire\n'
 printf '     - vim\n'
 printf '============================================================\n\n'
-sudo apt install ntop\
+apt install ntop\
     iftop\
     htop\
     iotop\
@@ -165,14 +165,14 @@ printf '\n============================================================\n'
 printf '[+] copying config files\n'
 printf '============================================================\n\n'
 # tmux:
-sudo mv /opt/Kali_Setup/.tmux.conf ~/.tmux.conf
+mv /opt/Kali_Setup/.tmux.conf ~/.tmux.conf
 # get the file ownership correct:
 # -rw-r--r--  1 kali kali  1089 Dec  2 21:50  .tmux.conf
 chown kali:kali .tmux.conf
 chmod 644 .tmux.conf
 
 # z shell:
-sudo mv /opt/Kali_Setup/.zshrc ~/.zshrc
+mv /opt/Kali_Setup/.zshrc ~/.zshrc
 # get the file ownership correct:
 # -rw-r--r--  1 kali kali  1089 Dec  2 21:50  .zshrc
 chown kali:kali .zshrc
@@ -214,3 +214,9 @@ printf '[+] Unzipping RockYou\n'
 printf '============================================================\n\n'
 gunzip /usr/share/wordlists/rockyou.txt.gz 2>/dev/null
 ln -s /usr/share/wordlists ~/Downloads/wordlists 2>/dev/null
+
+
+
+printf '\n============================================================\n'
+printf "[+] Done. Don't forget to reboot! :)\n"
+printf '============================================================\n\n'
