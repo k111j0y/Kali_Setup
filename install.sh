@@ -46,21 +46,7 @@ printf '     - squid\n'
 printf '     - powershell-empire\n'
 printf '     - vim\n'
 printf '============================================================\n\n'
-apt install ntop\
-    iftop\
-    htop\
-    iotop\
-    locate\
-    yersinia\
-    rlwrap\
-    socat\
-    html2text\
-    chisel\
-    terminator\
-    jq\
-    squid\
-    powershell-empire\
-    vim -y\
+apt install  iftop htop iotop locate yersinia rlwrap socat html2text chisel terminator jq squid powershell-empire vim -y
 
 printf '\n============================================================\n'
 printf '[+] Installing:\n'
@@ -70,12 +56,7 @@ printf '     - patator\n'
 printf '     - net-tools\n'
 printf '     - tmux\n'
 printf '============================================================\n\n'
-apt-get install \
-    golang \
-    powershell \
-    patator \
-    net-tools \
-    tmux -y
+apt install golang     powershell     patator     net-tools    tmux -y
     
     
     
