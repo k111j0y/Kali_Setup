@@ -197,5 +197,5 @@ ln -s /usr/share/wordlists ~/Downloads/wordlists 2>/dev/null
 
 
 printf '\n============================================================\n'
-printf "[+] Done. Don't forget to reboot! :)\n"
+printf "[+] Done. Reboot now 👾 \n"
 printf '============================================================\n\n'
