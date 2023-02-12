@@ -26,7 +26,7 @@ sudo apt install snapd
 #sudo apt install ./code_1.68.0-1654690107_amd64.deb
 
 #install other standard apps
-sudo apt install rlwrap socat linenum html2text chisel terminator jq squid powershell-empire -y
+sudo apt install ntop iftop htop iotop yersinia rlwrap socat linenum html2text chisel terminator jq squid powershell-empire -y
 
 
 ##########################################################################################
@@ -61,5 +61,19 @@ git clone https://downloads.joomla.org/us/
 ##  copy config files:
 ##########################################################################################
 
+
 # tmux:
-mv /opt/Kali_Setup/.tmux.conf ~/.tmux.conf
+sudo mv /opt/Kali_Setup/.tmux.conf ~/.tmux.conf
+# get the file ownership correct:
+# -rw-r--r--  1 kali kali  1089 Dec  2 21:50  .tmux.conf
+chown kali:kali .tmux.conf
+chmod 644 .tmux.conf
+
+# z shell:
+sudo mv /opt/Kali_Setup/.zshrc ~/.zshrc
+# get the file ownership correct:
+# -rw-r--r--  1 kali kali  1089 Dec  2 21:50  .zshrc
+chown kali:kali .zshrc
+chmod 644 .zshrc
+
+
