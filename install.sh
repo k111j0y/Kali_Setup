@@ -62,4 +62,4 @@ git clone https://downloads.joomla.org/us/
 ##########################################################################################
 
 # tmux:
-cp 
+mv /opt/Kali_Setup/.tmux.conf ~/.tmux.conf
